@@ -7,7 +7,6 @@ GPIO.setup(17,GPIO.IN) #将17脚设置为输入
 GPIO.setup(17,GPIO.IN,pull_up_down=GPIO.PUD_UP)
 #将17脚设置成有上拉模式，此处使用软件上拉 ，也可以硬件实现上拉电阻。
 GPIO.setup(27,GPIO.OUT) #将17脚设置为输出
-count=0
 while True: #循环执行
     inputValue = GPIO.input(17) #读取键值
     if(inputValue==0):
