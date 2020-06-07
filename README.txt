@@ -4,9 +4,7 @@ Raspberry Pi：OverLayFS+Shell+Python GPIO，Build a Linux player（允许意外
 Step1 准备工作：
     购买树莓派4B硬件（主板，风扇，HDMI，Type-c电源，读卡器，亚克力外壳，风扇，微动开关，杜邦线，T8000），下载树莓派官方镜像，利用USB Image Tool烧录TF卡，组装好树莓派。
 
-图片
-
- Step2 基础配置：
+Step2 基础配置：
     配置：配置/boot/config.txt，打开HDMI热插拔，强制打开HDMI，进入系统后，配置打开SSH，打开GPIO，关闭开机密码，安装vlc播放器，安装xdotool（模拟键鼠操作）。下载片源，生成循环播放列表，完成相关操作后，记录需要开机自启的键鼠动作（按键，鼠标操作，后续开机自启全部利用xdotool模拟实现操作），此后开机全部自动播放，按下按钮切换下一个视频。
 
  Step3 编写脚本：overlayRoot.sh引用自Github，其他自主编写 。
@@ -60,5 +58,4 @@ xdotool key n  #GPIO按钮按下，对应VLC快捷键N，下一曲。
      /sbin/overlayRoot.sh
      echo "init=/sbin/overlayRoot.sh" >> /boot/cmdline.txt
      vim /etc/fstab 修改各个分区为只读。
-安装按钮，胶水一封，哦吼，有了：
-图片
+安装按钮，胶水一封，哦吼，有了.
