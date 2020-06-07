@@ -1,7 +1,6 @@
 # Raspberry-Pi
 Raspberry Pi：OverLayFS+Shell+Python GPIO，Build a Linux player（允许意外断电 允许意外断电 Allow unexpected power failure）
 
-
 Step1 准备工作：
     购买树莓派4B硬件（主板，风扇，HDMI，Type-c电源，读卡器，亚克力外壳，风扇，微动开关，杜邦线，T8000），下载树莓派官方镜像，利用USB Image Tool烧录TF卡，组装好树莓派。
 
